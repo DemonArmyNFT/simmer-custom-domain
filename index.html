@@ -5,9 +5,17 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Demon Army Origins</title>
+<style>
+  #fs_button {
+  position: absolute;
+  left: 300px; /* X coordinate, adjust as needed */
+  top: 300px; /* Y coordinate, idem */
+  z-index: 10; /* This should be needed only if the #webgl container has already some z-index value*/
+}
+</style>
 </head>
 <body>
-<input type="button" style="z-index:3" value="Fullscreen"
+<input id="fs_button" type="button" style="z-index:3" value="Fullscreen"
              onclick="document.documentElement.requestFullscreen()"/>
 
 </body>
